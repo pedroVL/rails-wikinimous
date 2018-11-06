@@ -1,0 +1,14 @@
+<div class="header"><h1>Create new article</h1><%= link_to "back", articles_path %></div>
+<ul>
+<%= form_for @article do |f| %>
+  <%= f.label :title, "Enter a title" %><br>
+  <%= f.text_field :title %><br>
+  <%= f.label :content, "Enter a content" %><br>
+
+  <%= f.text_field :content %>
+  <br>
+  <%= f.submit %>
+
+<% end %>
+
+
